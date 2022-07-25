@@ -1,0 +1,55 @@
+@media only screen and (max-width: 550px){
+    .destaques__secundario:nth-child(2),
+    .destaques__secundario:nth-child(3),
+    .destaques__secundario:nth-child(4),
+    .destaques__secundario:nth-child(5){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__principal,
+    .destaques__categorias{
+        grid-column: 1 / 5;
+    }
+
+    .populares__contenido{
+        flex-direction: column;
+    }
+
+    .populares__card{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+@media only screen and (min-width: 550px){
+        .destaques__secundario:nth-child(2),
+        .destaques__secundario:nth-child(3),
+        .destaques__secundario:nth-child(4),
+        .destaques__secundario:nth-child(5){
+            display: none;
+            grid-column: none;
+            grid-row: none;
+        }
+    
+        .destaques__principal,
+        .destaques__categorias{
+            grid-column: 1 / 5;
+        }
+    
+        .populares__contenido{
+            flex-direction: column;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: space-between;
+            gap: .8rem
+        }
+    
+        .populares__card{
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+}
